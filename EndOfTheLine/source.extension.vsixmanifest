@@ -10,11 +10,12 @@
     <PreviewImage>Eol-preview.png</PreviewImage>
     <Tags>EOL, End of line, Line endings, CR, LF, CRLF, Unix </Tags>
   </Metadata>
-  <Installation>
-      <InstallationTarget Version="[14.0,17.0)" Id="Microsoft.VisualStudio.Community" />
-      <InstallationTarget Version="[11.0,17.0)" Id="Microsoft.VisualStudio.Pro" />
-  </Installation>
-  <Dependencies>
+ <Installation>
+        <InstallationTarget Version="[15.0,17.0)" Id="Microsoft.VisualStudio.Community" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>  <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.0, 4.5]" />
   </Dependencies>
   <Assets>
